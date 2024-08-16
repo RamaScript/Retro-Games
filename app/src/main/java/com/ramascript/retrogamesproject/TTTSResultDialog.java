@@ -1,0 +1,41 @@
+package com.ramascript.retrogamesproject;
+
+import android.app.Dialog;
+import android.content.Context;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+
+public class TTTSResultDialog extends Dialog {
+
+    private final String message;
+    private final TTTS mainActivity;
+
+    public TTTSResultDialog(@NonNull Context context, String message, TTTS mainActivity) {
+        super(context);
+        this.message = message;
+        this.mainActivity = mainActivity;
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_ttts_result_dialog);
+
+        TextView messageText = findViewById(R.id.messageText);
+        Button startAgainButton = findViewById(R.id.startAgainButton);
+
+        messageText.setText(message);
+
+        startAgainButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mainActivity.restartMatch();
+                dismiss();
+            }
+        });
+    }
+}
