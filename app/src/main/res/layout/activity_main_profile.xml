@@ -9,18 +9,20 @@
     tools:context=".mainProfile">
 
     <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="28dp"
-        android:background="@drawable/bg_btn"
-        android:onClick="home"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        android:id="@+id/backImgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/btn_color"
+        android:src="@drawable/arrow_back_black"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="12dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/util_back"
-        app:tint="#FFFFFF" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_width="355dp"
@@ -36,7 +38,6 @@
             android:layout_width="201dp"
             android:layout_height="183dp"
             android:layout_gravity="center"
-            android:background="@drawable/util_lavender_border"
             app:srcCompat="@drawable/my_pic" />
 
         <TextView
@@ -44,7 +45,6 @@
             android:layout_width="317dp"
             android:layout_height="50dp"
             android:layout_margin="20dp"
-            android:background="@drawable/util_lavender_border"
             android:fontFamily="sans-serif-condensed-medium"
             android:paddingLeft="10dp"
             android:text="Ramanand Kumar"
@@ -56,7 +56,6 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="20dp"
-            android:background="@drawable/util_lavender_border"
             android:fontFamily="sans-serif-condensed-medium"
             android:paddingLeft="10dp"
             android:text="All game winner"

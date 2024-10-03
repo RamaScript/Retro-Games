@@ -13,13 +13,21 @@
         android:theme="@style/Theme.RetroGamesProject"
         tools:targetApi="31">
         <activity
+            android:name=".simonGame"
+            android:exported="false" />
+        <activity
+            android:name=".splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".TTTS"
             android:exported="false" />
-        <activity android:name=".TTTSAddPlayers"/>
-
-        <activity
-            android:name=".TTTmain"
-            android:exported="false" />
+        <activity android:name=".TTTSAddPlayers" />
         <activity
             android:name=".FBmain"
             android:exported="false" />
@@ -37,13 +45,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

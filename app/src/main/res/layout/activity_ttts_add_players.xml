@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/ttts_pagebkg"
+    android:background="@drawable/main_bg"
     tools:context=".TTTSAddPlayers">
 
     <androidx.cardview.widget.CardView
@@ -32,7 +32,7 @@
                 android:textAlignment="center"
                 android:textSize="36sp"
                 android:textStyle="bold"
-                android:textColor="@color/lavender"/>
+                android:textColor="@color/burlywood"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -44,7 +44,7 @@
                 android:maxLines="1"
                 android:textStyle="italic"
                 android:hint="Enter player one name"
-                android:textColor="@color/lavender"
+                android:textColor="@color/burlywood"
                 android:drawableLeft="@drawable/ttts_ic_xicon"
                 android:drawablePadding="8dp"/>
 
@@ -58,7 +58,7 @@
                 android:maxLines="1"
                 android:textStyle="italic"
                 android:hint="Enter player two name"
-                android:textColor="@color/lavender"
+                android:textColor="@color/burlywood"
                 android:drawableLeft="@drawable/ttts_ic_oicon"
                 android:drawablePadding="8dp"/>
 
@@ -68,7 +68,9 @@
                 android:layout_marginTop="30dp"
                 android:id="@+id/startGameButton"
                 android:text="Start Game"
+                android:backgroundTint="@color/burlywood"
                 android:textSize="18sp"
+                android:textColor="@color/white"
                 app:cornerRadius = "20dp"/>
 
         </LinearLayout>

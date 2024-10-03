@@ -34,6 +34,7 @@ public class TTTSAddPlayers extends AppCompatActivity {
                     intent.putExtra("playerOne", getPlayerOneName);
                     intent.putExtra("playerTwo", getPlayerTwoName);
                     startActivity(intent);
+                    finish();
                 }
             }
         });

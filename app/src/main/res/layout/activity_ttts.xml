@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lavender"
+    android:background="@color/burlywood"
     tools:context=".MainActivity">
 
 
@@ -34,7 +34,7 @@
                 android:textSize="20sp"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:textColor="@color/lavender"
+                android:textColor="@color/burlywood"
                 android:maxLines="1"/>
 
             <ImageView
@@ -65,7 +65,7 @@
                 android:textSize="20sp"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:textColor="@color/lavender"
+                android:textColor="@color/burlywood"
                 android:maxLines="1"/>
 
             <ImageView

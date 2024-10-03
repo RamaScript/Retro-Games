@@ -5,91 +5,115 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_bg"
+    android:background="@drawable/bg"
     tools:context=".mainLogin">
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/bg_btn"
-        android:onClick="home"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/util_back"
-        app:tint="#FFFFFF"
-        tools:ignore="TouchTargetSizeCheck" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="309dp"
-        android:layout_height="455dp"
-        android:gravity="center"
-        android:orientation="vertical"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/skipBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/btn_color"
+        android:drawableEnd="@drawable/dbl_arrow_skip"
+        android:text="Skip"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="@color/BG_COLOR_transparent"
+        app:cardCornerRadius="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.467">
+        app:layout_constraintVertical_bias="0.5">
 
-        <EditText
-            android:id="@+id/editTextText2"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/util_lavender_border"
-            android:ems="10"
-            android:hint="Enter Username"
-            android:inputType="text"
-            android:paddingLeft="25dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textSize="34sp" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="12dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="12dp">
 
-        <EditText
-            android:id="@+id/editTextTextPassword2"
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/util_lavender_border"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:paddingLeft="25dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textSize="34sp" />
+            <TextView
+                android:id="@+id/loginTitleTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Login"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="195dp"
-            android:layout_height="76dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/util_lavender_border"
-            android:fontFamily="sans-serif-smallcaps"
-            android:hapticFeedbackEnabled="true"
-            android:text="Login"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="34sp" />
+            <EditText
+                android:id="@+id/usernameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Username"
+                android:fontFamily="@font/poppins"
+android:layout_marginBottom="2dp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/alphaBlack" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="271dp"
-            android:layout_height="70dp"
-            android:layout_margin="20dp"
-            android:backgroundTint="#00D82E2E"
-            android:fontFamily="sans-serif-smallcaps"
-            android:onClick="reg"
-            android:text="Create Account"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/passwordET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+android:layout_marginBottom="2dp"
+                android:hint="Enter Password"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/alphaBlack" />
 
-    </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round"
+                android:backgroundTint="@color/btn_bg"
+                android:text="Sign In"
+                android:fontFamily="@font/poppins"
+
+                android:textSize="18dp"
+                android:layout_marginTop="12dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/dontHaveAcTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="right"
+                android:fontFamily="@font/poppins"
+android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="Don't have an account?"
+                android:textColor="@color/alphaBlack" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

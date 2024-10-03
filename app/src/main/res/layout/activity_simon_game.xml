@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@color/ssgbgc"
+    android:paddingTop="42dp"
+    android:paddingBottom="42dp"
+    >
+
+    <TextView
+        android:id="@+id/level_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/black" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Start"
+        android:textSize="18dp"
+        android:background="@drawable/round"
+        android:fontFamily="@font/poppins"
+        android:backgroundTint="@color/btn_bg"
+        />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:padding="10dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/red_button"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/ssgtopleft"
+
+            />
+
+        <Button
+            android:id="@+id/yellow_button"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_margin="8dp"
+
+            android:backgroundTint="@color/ssgtopright" />
+
+        <Button
+            android:id="@+id/purple_button"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_margin="8dp"
+
+            android:backgroundTint="@color/ssgbottomleft" />
+
+        <Button
+            android:id="@+id/green_button"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_margin="8dp"
+
+            android:backgroundTint="@color/ssgbottomright" />
+    </GridLayout>
+
+</LinearLayout>

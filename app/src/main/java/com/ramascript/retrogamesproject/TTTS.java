@@ -152,10 +152,10 @@ public class TTTS extends AppCompatActivity {
     private void changePlayerTurn(int currentPlayerTurn) {
         playerTurn = currentPlayerTurn;
         if (playerTurn == 1) {
-            playerOneLayout.setBackgroundResource(R.drawable.util_black_border);
+            playerOneLayout.setBackgroundResource(R.drawable.ttt_border);
             playerTwoLayout.setBackgroundResource(R.drawable.ttts_white_box);
         } else {
-            playerTwoLayout.setBackgroundResource(R.drawable.util_black_border);
+            playerTwoLayout.setBackgroundResource(R.drawable.ttt_border);
             playerOneLayout.setBackgroundResource(R.drawable.ttts_white_box);
         }
     }

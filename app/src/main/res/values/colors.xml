@@ -10,4 +10,16 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="lavender">#8692f7</color>
+    <color name="burlywood">#DEB887</color>
+    <color name="btn_bg">#FF8203</color>
+    <color name="ttt_bg">#FF9000</color>
+    <color name="BG_COLOR_transparent">#B3F5FEFD</color>
+    <color name="btn_color">#FFDEAD</color>
+    <color name="alphaBlack">#99000000</color>
+    <color name="background" >#C6B7A5</color>
+    <color name="ssgbgc" >#C6B7A5</color>
+    <color name="ssgtopleft"    >#861911</color>//4C9233
+    <color name="ssgtopright"   >#DAD403</color>//336796
+    <color name="ssgbottomright">#336796</color>//E1DD18
+    <color name="ssgbottomleft" >#4C9233</color>//861911
 </resources>
