@@ -1,4 +1,4 @@
-package com.ramascript.retrogamesproject;
+package com.ramascript.retrogamesproject.FlappyBird;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -11,6 +11,8 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import androidx.annotation.Nullable;
+
+import com.ramascript.retrogamesproject.R;
 
 import java.util.ArrayList;
 
@@ -52,7 +54,7 @@ public class FBGameView extends View {
         for (int i = 0; i<sumpipe;i++){
             if (i<sumpipe/2){
                 this.arrPipes.add(new FBpipe(FBConstants.SCREEN_WIDTH+i*(FBConstants.SCREEN_WIDTH+200* FBConstants.SCREEN_WIDTH/1000)/(sumpipe/2),0,200* FBConstants.SCREEN_WIDTH/1080, FBConstants.SCREEN_HEIGHT/2));
-                this.arrPipes.get(this.arrPipes.size()-1).setBm(BitmapFactory.decodeResource(this.getResources(),R.drawable.fb_pipe2));
+                this.arrPipes.get(this.arrPipes.size()-1).setBm(BitmapFactory.decodeResource(this.getResources(), R.drawable.fb_pipe2));
                 this.arrPipes.get(this.arrPipes.size()-1).randomY();
             }else{
                 this.arrPipes.add(new FBpipe(this.arrPipes.get(i-sumpipe/2).getX(),this.arrPipes.get(i-sumpipe/2).getY()

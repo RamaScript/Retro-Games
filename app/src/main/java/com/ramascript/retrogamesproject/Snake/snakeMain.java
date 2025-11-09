@@ -1,4 +1,4 @@
-package com.ramascript.retrogamesproject;
+package com.ramascript.retrogamesproject.Snake;
 
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+
+import com.ramascript.retrogamesproject.R;
 
 import java.util.ArrayList;
 import java.util.List;

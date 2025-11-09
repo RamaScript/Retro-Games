@@ -133,7 +133,7 @@
                 app:srcCompat="@drawable/snake_icon" />
 
             <ImageView
-                android:id="@+id/tzfe"
+                android:id="@+id/TwoZeroFourEight"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_marginLeft="20dp"

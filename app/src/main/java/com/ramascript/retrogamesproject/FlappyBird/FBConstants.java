@@ -1,4 +1,4 @@
-package com.ramascript.retrogamesproject;
+package com.ramascript.retrogamesproject.FlappyBird;
 
 public class FBConstants {
 

@@ -1,12 +1,13 @@
-package com.ramascript.retrogamesproject;
+package com.ramascript.retrogamesproject.TicTacToe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.LinearLayout;
+
+import com.ramascript.retrogamesproject.R;
 
 import java.util.ArrayList;
 import java.util.List;

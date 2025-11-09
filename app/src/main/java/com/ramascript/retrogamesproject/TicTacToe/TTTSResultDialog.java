@@ -1,4 +1,4 @@
-package com.ramascript.retrogamesproject;
+package com.ramascript.retrogamesproject.TicTacToe;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+
+import com.ramascript.retrogamesproject.R;
 
 public class TTTSResultDialog extends Dialog {
 

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,7 +15,10 @@
         android:theme="@style/Theme.RetroGamesProject"
         tools:targetApi="31">
         <activity
-            android:name=".simonGame"
+            android:name=".TwoZeroFourEight.TwoZeroFourEight"
+            android:exported="true" />
+        <activity
+            android:name=".SimonSaysGame.simonGame"
             android:exported="false" />
         <activity
             android:name=".splash"
@@ -25,14 +30,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TTTS"
+            android:name=".TicTacToe.TTTS"
             android:exported="false" />
-        <activity android:name=".TTTSAddPlayers" />
+        <activity android:name=".TicTacToe.TTTSAddPlayers" />
         <activity
-            android:name=".FBmain"
+            android:name=".FlappyBird.FBmain"
             android:exported="false" />
         <activity
-            android:name=".snakeMain"
+            android:name=".Snake.snakeMain"
             android:exported="false" />
         <activity
             android:name=".mainProfile"
@@ -45,7 +50,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

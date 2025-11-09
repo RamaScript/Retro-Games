@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -12,10 +13,16 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.ramascript.retrogamesproject.FlappyBird.FBmain;
+import com.ramascript.retrogamesproject.SimonSaysGame.simonGame;
+import com.ramascript.retrogamesproject.Snake.snakeMain;
+import com.ramascript.retrogamesproject.TicTacToe.TTTSAddPlayers;
+import com.ramascript.retrogamesproject.TwoZeroFourEight.TwoZeroFourEight;
+
 public class MainActivity extends AppCompatActivity {
 
     public void Snake(View view){
-        Intent i = new Intent(this,snakeMain.class);
+        Intent i = new Intent(this, snakeMain.class);
         startActivity(i);
     }
 
@@ -34,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     ImageButton profileBtn, chatBtn;
+    ImageView TwoZeroFourEightIV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
         profileBtn = findViewById(R.id.profile_btn);
         chatBtn = findViewById(R.id.chat_btn);
+        TwoZeroFourEightIV = findViewById(R.id.TwoZeroFourEight);
 
         profileBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,5 +73,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TwoZeroFourEightIV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TwoZeroFourEight.class);
+                startActivity(intent);
+            }
+        });
     }
 }

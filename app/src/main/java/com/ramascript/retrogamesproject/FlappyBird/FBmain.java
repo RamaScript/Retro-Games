@@ -1,4 +1,4 @@
-package com.ramascript.retrogamesproject;
+package com.ramascript.retrogamesproject.FlappyBird;
 
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -9,6 +9,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.ramascript.retrogamesproject.R;
 
 public class FBmain extends AppCompatActivity {
     public static TextView txt_score, txt_best_score,txt_score_over;

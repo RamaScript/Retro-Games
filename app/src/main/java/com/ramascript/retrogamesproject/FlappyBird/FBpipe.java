@@ -1,4 +1,4 @@
-package com.ramascript.retrogamesproject;
+package com.ramascript.retrogamesproject.FlappyBird;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
